@@ -1,0 +1,25 @@
+[flake8]
+# Set line length limit (default 79 is too restrictive)
+max-line-length = 80
+
+# Ignore specific errors:
+# E302 - expected 2 blank lines between functions
+# W293 - blank line contains whitespace
+# W291 - trailing whitespace
+# W292 - no newline at end of file
+ignore = E302, W293, W291, W292
+
+# Exclude directories
+exclude = 
+    .git,
+    __pycache__,
+    .ipynb_checkpoints,
+    venv,
+    models
+
+# Show source of errors
+show-source = True
+
+# Per-file-ignores (optional)
+per-file-ignores =
+    __init__.py:W292
